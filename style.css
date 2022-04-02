@@ -1,0 +1,317 @@
+
+
+
+       .html, body {
+
+    
+        /* Je place une couleur d'arrière plan à mon contenu body */
+                
+        /*J'indique une largeur de 11% à mon body*/
+                width:1200px;
+                background-image: url(img/SOS-cameleon.jpg); 
+                /*Je place la propriété background-attachment afin de définir une position fixé sur la zone d'affichage*/
+                        background-attachment:fixed;
+             } 
+           
+           
+             @media screen and (max-width: 680px) { 
+                .html, body {/* Je place une largeur à mon header*/
+                        width:80%;}
+            }
+    
+    span h1 {
+           
+  /*Ici j'indique la taille de police du texte*/
+        font-size: 30px;
+  /*Ici j'indique la couleur du texte*/
+        color:#019267;
+  /* Ici j'indique les familles de polices relatives à mon titre h1*/
+          font-family: roboto black,"roboto bold", 'Open Sans';
+  /*Ici l'alignement du titre*/
+          text-align:center;
+  /* Iic je place mon titre en gras*/
+          font-weight:bold;
+  /*Je place un espacement entre les lettres de mon titre h1*/
+           letter-spacing: 0.2em;
+  /*Je place une marge en haut de mon titre*/
+          margin-top:5%;
+  /*Je place une marge a gauche de mon titre h1*/
+          margin-left:5%;
+  /*J'ajoute un espace entre les mots de mon titre h1 */  
+          word-spacing:0,5%    
+            
+              }
+
+
+h2 {
+
+/*Je transforme ma boite en élément inline-block*/
+  display:inline-block;
+/* Je place une taille de police à mon contenu */
+  font-size: 25px;
+/* Je place une famille de police à mon contenu */
+  font-family: roboto black,"roboto bold";
+  color:black;
+/*Je place un espacement entre les lettres de mon titre h1*/
+  letter-spacing: 0.1em;
+/* J'ôte la décoration liée au lien à mon titre h2*/
+  text-decoration: none;
+/* Je créé une propriété "sanssautdeligne" */
+  white-space:nowrap;
+/* Je place une marge à mon titre h2 */
+  margin-top:30px;
+  
+  
+}
+
+
+/*Pour finir, j'ajoute un effet de survol sur les liens en span (img et H2).*/
+  span  a:hover {
+
+  background-color:rgb(140, 94, 184);
+  border-color: #0d706a;
+
+}
+
+
+
+.box {
+/*Je transforme ma boite en élément inline*/
+  display: inline;
+/*Je modifie la taille de mon texte*/
+  font-size: 12px;
+/*J'ajoute mes familles de police*/
+  font-family: roboto,sans-serif;
+/*J'ajoute une couleur au texte de ma boite*/
+  color:black;
+/*Jeplace un espace entre les lettres*/
+  letter-spacing: 1px;
+/*J'ajoute un espace entre les mots de mon titre h1 */  
+  word-spacing:O,2%;
+/*J'intègre la proprité white-space afin de  spécifier au navigateur va interpréter que 
+les espaces blancs et caractères de de retour à la ligne se feront de façon automatique.*/
+  white-space:nowrap;
+/*Je place une marge en haut de mon texte de paragraphe de ma box*/
+  margin-top:40px;
+  
+}
+
+
+.header{
+
+/*Je place une couleur de fond à mon header*/
+  background-color:#FFD365;
+/* Je place une largeur à mon header*/
+  width:100%;
+/*Je place mon header en élément flex*/
+  display:flex;
+/* Je place une marge en dessous de mon header en %*/
+  margin-bottom:2%;
+  justify-content: center;
+
+}
+
+
+
+ .logo  {
+
+/* Je modifie la taille de mon logo*/   
+  width:30px;
+  height:30px;
+/* je place la proprité float afin de cadrer mon image avec mon titre*/
+  margin-left:5%;
+/* je place une marge en haut de mon image*/
+  margin-top:1%;
+      
+}
+
+
+[type="search"] {
+
+/* Je change l'apparence de mon formulaire de recherche*/
+        color:black;
+        background-color: white;
+        width: 20%;
+        height: 15%;
+        padding: 1%;
+        margin-right:10%;
+/* Je place une marge en hauteur*/
+        margin-bottom:1% ;
+        margin-top:5%;
+                      
+                  }
+
+/* Je retire mon tableau de recherche en mode responsive*/
+
+
+                            
+@media screen and (max-width: 680px) { 
+    [type="search"] {
+display:none;}
+}
+
+
+ 
+
+
+#nav {
+                        
+  /* Je transforme la liste en élément flexible de type flexbox. */
+          display:flex;
+  /* Je place une bordure et une couleur d'arrière plan à mon menu*/
+          border: 1px solid black;
+  /* Je place uen couleur de fond à mon menu*/
+          background-color: #019267;
+  /* Je supprime les marges internes du menu */
+          padding:10px;
+  /* Je centre mon menu avec la propriété justify-content et la valeur center */
+          justify-content:space-around;
+          width:80%;
+          margin:auto;
+                      
+                  }
+
+
+ #nav  li {
+   
+  /* Je supprime les puces se trouvant sur les lignes de mon menu de navigation */
+    list-style-type: none;
+  /* Je centre le texte du menu avec la propriété text-align et la valeur center.*/
+    text-align: center;
+  /*Je modifie les éléments du menu (nav) afin qu'ils aient la même taille.*/
+    flex-basis: 120px;
+
+  }
+
+
+  #nav a {
+
+  /* Je change me sliens en block.*/
+    display: block;
+  /* J'ajoute une couleur de fond aux liens du menu de navigation.*/
+    background-color:#FDFFA9;
+  /* J'ajoute une bordure aux liens du menu.*/
+    border: 1px solid rgb(20, 166, 224);
+  /* Je transforme les liens de la nav en éléments de type block afin qu'ils occupent
+  toute la largeur de la ligne de la liste. J'ajoute aussi une marge interne*/
+    padding: 0.5rem;
+  /* J'ajoute une couleur sur le texte.*/
+    color: #111;
+  /* J'ajoute sur les liens une bordures basse.*/
+    border-bottom: 3px solid #333;
+    text-decoration: none;
+    
+   }
+
+
+   #nav a.active {
+
+    color: blueviolet;
+    background-color: #bbbe09;
+    border-color: #0d706a;
+  }
+
+
+
+   #nav a:hover {
+
+  /*Pour finir, ajoutez un effet de survol sur les liens.*/
+    color: blue;
+    background-color: #f5e49f;
+    border-color: #9e7f02;
+  }
+
+  img {
+    
+/* Je place une bordure à mes boites, avec taille de 30px*/
+  border-radius: 30px;
+
+  }
+  
+  section.container {
+
+/* Je place la valeur flex, pour indiquer la valeur flex*/
+   
+    display: flex;
+    /* J'indique la propriété flex wrap pour disposer mes élémlents flexibles en une seule ligne*/
+    flex-wrap: wrap;
+    align-content: center;
+  /* J'indique la postion de mes éléments en colonnes*/
+    flex-direction: column;
+    
+  }
+
+/*Je place la propriété flex sur mon contenair où se trouve les box liées à mes pages*/
+
+  section.container .item {
+
+  /* J'indique la propriété flex avec valeur 1 afin de remplir l'espacxe dispo dans son contener*/
+    display: flex;
+  /*J'ajoute une ombre à mes boites*/
+    box-shadow: 1px 1px 12px rgb(0, 0, 0, 0.2);
+  /* Je place une bordure à mes boites, avec taille de 20px*/
+    border-radius: 20px;
+  /* Egalement une marge et un padding*/
+    margin: 30px;
+    padding: 10px;
+    /*Je place une couleur de fond à mon contenair*/
+    background-color: #FDFFA9;
+  /* J'utilise la propriété max width et height avec la valeur "auto" afin d'appliquer aux images la largeur max de leur conteneur
+  et la propriété height pour que la hauteur de l'image s'ajuste en fonction de la largeur */
+    width:60%;
+    align-items:center;
+    flex-direction: column;
+    height:300px;
+  
+}
+    
+  
+  .item> p {
+
+  /*Je règles la mise en forme de mon paragraphe CSS*/
+
+     
+    font-family: roboto black,"roboto bold",'Open Sans';
+    color:black;
+    text-align:center;
+    letter-spacing:1px; 
+    padding:0%;
+    margin:1%;
+  /*Ici j'indique la taille du texte, idéale pour le responsive design*/
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+     
+    
+    }
+
+
+  /*Je modifie ma class pied-page de mon footer*/
+  
+  .pied-page{
+
+    
+    background-color: #FFD365;
+    width: 100%;
+    height:150px;
+    margin-top:2%;
+    padding-top:10px;
+
+  }
+  /*Je modifie le paragrahe de mon pied de page avec le sréglages habituels*/
+
+   .pied-page>p {
+            
+            
+    text-align:center;
+    font-size:10px;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top:2%;
+    padding:1%;
+    letter-spacing:5px;
+    background-color:white;
+    
+  
+  }
+  

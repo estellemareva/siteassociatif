@@ -1,0 +1,477 @@
+.html, body {
+
+    
+/* Je place une couleur d'arrière plan à mon contenu body */
+                
+/*J'indique une largeur de 11% à mon body*/
+        width:1200px;
+        background-image: url(img/SOS-cameleon.jpg); 
+/*Je place la propriété background-attachment afin de définir une position fixé sur la zone d'affichage*/
+        background-attachment:fixed;
+             } 
+           
+           
+@media screen and (max-width: 680px) { 
+        .html, body {/* Je place une largeur à mon header*/
+        width:80%;}
+            }
+      
+ 
+        
+span h1 {
+               
+/*Ici j'indique la taille du texte que je modifie avec l'unité "em", idéale pour le responsive design.*/
+        font-size: 2em;
+/*Ici j'indique la couleur du texte*/
+        color:#019267;
+/* Ici j'indique les familles de polices relatives à mon titre h1*/
+        font-family: roboto black,"roboto bold", 'Open Sans';
+/*Ici je modifie l'alignement du titre avec la propriété "text-align" et la valeur "center"*/
+        text-align:center;
+/*Je place mon titre en gras avec la propriété "font-weith" et la valeur "bold"*/
+        font-weight:bold;
+/*Je place un espacement entre les lettres de mon titre h1*/
+        letter-spacing: 0.2em;
+/*Je place une marge en haut de mon titre avec la propriété "margin" et la valeur "top"*/
+        margin-top:5%;
+/*Je place une marge a la gauche de mon titre h1*/
+        margin-left:5%;
+/*J'ajoute un espace entre les mots de mon titre h1, avec la propriété "word-spacing"*/  
+        word-spacing:0,5%    
+                
+                  }
+
+                  
+            
+                      
+.header{
+
+/*Je place une couleur de fond à mon header*/
+                background-color:#FFD365;
+/* Je place une largeur à mon header*/
+                width:100%;
+/*Je place mon header en élément flex*/
+                display:flex;
+/* Je place une marge en dessous de mon header en %*/
+                margin-bottom:2%;
+                justify-content: center;
+                                       
+                                       }
+                                       
+                                
+@media screen and (max-width: 680px) { 
+.header {/* Je place une largeur à mon header*/
+                width:95%;}
+                           }      
+                    
+                    
+        .logo  {
+                    
+/* Je modifie la taille de mon logo en largeur et en hauteur*/   
+            width:30px;
+            height:30px;
+/* je place la proprité float afin de cadrer mon image avec mon titre*/
+            margin-left:5%;
+/* je place une marge en haut de mon image*/
+            margin-top:1%;
+                          
+                    }
+
+
+                    
+        [type="search"] {
+
+    /* Je change l'apparence de mon formulaire de recherche*/
+            color:black;
+            background-color: white;
+            width: 20%;
+            height: 15%;
+            padding: 1%;
+            margin-right:10%;
+    /* Je place une marge en hauteur*/
+            margin-bottom:1% ;
+            margin-top:5%;
+                        
+                    }
+
+        @media screen and (max-width: 680px) { 
+                [type="search"] {
+            display:none;}
+                    }
+                         
+                    
+                    
+         #nav {
+                        
+        /* Je transforme la liste en élément flexible de type flexbox. */
+                display:flex;
+        /* Je place une bordure et une couleur d'arrière plan à mon menu*/
+                border: 1px solid black;
+        /* Je place uen couleur de fond à mon menu*/
+                background-color: #019267;
+        /* Je supprime les marges internes du menu */
+                padding:10px;
+        /* Je centre mon menu avec la propriété justify-content et la valeur center */
+                justify-content:space-around;
+                width:80%;
+                margin:auto;
+                                            
+                                        }
+                    
+                    
+                  
+
+
+                #nav  li {
+   
+        /* Je supprime les puces se trouvant sur les lignes de mon menu de navigation */
+                list-style-type: none;
+        /* Je centre le texte du menu avec la propriété text-align et la valeur center.*/
+                text-align: center;
+        /*Je modifie les éléments du menu (nav) afin qu'ils aient la même taille.*/
+                flex-basis: 120px;
+                                                                      
+                                                                        }
+                                                                
+                                                            
+                                                                
+        #nav a {
+                                        
+        /* Je change me sliens en block.*/
+                display: block;
+        /* J'ajoute une couleur de fond aux liens du menu de navigation.*/
+                background-color:#FDFFA9;
+        /* J'ajoute une bordure aux liens du menu.*/
+                border: 1px solid rgb(20, 166, 224);
+         /* Je transforme les liens de la nav en éléments de type block afin qu'ils occupent
+         toute la largeur de la ligne de la liste. J'ajoute aussi une marge interne*/
+                padding: 0.5rem;
+         /* J'ajoute une couleur sur le texte.*/
+                color: #111;
+         /* J'ajoute sur les liens une bordures basse.*/
+                border-bottom: 3px solid #333;
+                text-decoration: none;
+                                   
+                                  }                                       
+            
+        #nav a:active 
+        {
+    /* Je place la pseudo-classe "a:active" 
+    afin de permettre de cibler mes liens lorsque ceux-ci sont activés par les utilisateurs*/
+            
+        color: violet;
+        background-color: blue;
+        border-color: #0d706a;
+                
+    }
+                    
+                    
+                    
+        #nav a:hover {
+                    
+    /*Pour finir, ajoutez un effet de survol sur les liens.*/
+            color: blue;
+    /*Je place une couleur de fond sur les liens.*/
+           background-color: #00C897;
+    /*Je place une bordure sur les liens.*/
+           border-color:black;
+                      
+    }
+                    
+        
+img {
+                        
+/* Je place une bordure à mes boites, avec taille de 30px*/
+        border-radius: 30px;
+                    
+        }
+
+
+    
+section {
+            
+            
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width:95%;
+    /* J'indique une valeur adaptive pour mes divers écrans avec la propriété "max-width"*/
+        max-width:1200px;
+        background-color: #0d706a;
+        margin:1%;       
+              } 
+
+
+
+            
+        .box1 {
+
+                display:flex;
+                flex-direction:column;
+                background-image:url(img/joli-cameleon.jpg); 
+                width:95%;
+           /* J'indique une valeur adaptive pour mes divers écrans avec la propriété "max-width"*/
+                max-width:800px;
+                height:500px;
+                margin:2%;
+                text-align:center;
+                padding:1%;
+               margin-top:1%;
+        
+       
+                }
+                
+            
+
+    .box1 > p {
+
+
+font-size: 11px;
+/*Ici j'indique la couleur du texte*/
+        color:white;     
+/* Ici j'indique les familles de polices relatives à mon titre h1*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*Ici je modifie l'alignement du titre avec la propriété "text-align" et la valeur "center"*/
+        text-align:center;
+        margin-top:2%;
+
+
+    }
+
+
+
+
+ .box2 {
+
+     display:flex;
+     flex-direction:column;
+     background-image:url(img/joli-cameleon.jpg); 
+     width:95%;
+/* J'indique une valeur adaptive pour mes divers écrans avec la propriété "max-width"*/
+     max-width:800px;
+     height:500px;
+     margin:2%;
+     text-align:center;
+     padding:1%;
+    margin-top:1%;
+
+
+}
+
+.box2 > p {
+
+
+        font-size: 11px;
+        /*Ici j'indique la couleur du texte*/
+                color:white;     
+        /* Ici j'indique les familles de polices relatives à mon titre h1*/
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /*Ici je modifie l'alignement du titre avec la propriété "text-align" et la valeur "center"*/
+                text-align:center;
+                margin-top:2%;
+                margin-bottom:3%;
+        
+        
+            }
+        
+
+
+
+
+@media screen and (max-width: 680px) { 
+        .box2 {
+    display:none;
+   
+}
+    }   
+  
+
+
+   
+h3{
+
+
+        
+        text-align-last: center;
+        letter-spacing:1px; 
+        padding:1%;
+/*Ici j'indique la taille du texte, idéale pour le responsive design*/
+        font-size: 1rem;
+        color:white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin:auto;
+        margin-bottom:4%;
+        margin-top:1%;
+
+
+
+          }
+
+ 
+
+
+.sub-navigation {
+    
+/* Je transforme la liste en élément flexible de type flexbox. */
+    display: flex;
+/* Je change la direction des éléments du menu avec la prropriété "flex-direction" et la valeur "column".*/
+    flex-direction: column;
+    align-self: center;
+    background-color:#00C897;
+    border: medium dashed black;
+    width:70%;
+/* J'indique une valeur adaptive pour mes divers écrans avec la propriété "max-width"*/
+    max-width:700px;
+/* J'indique une valeur adaptive pour mes divers écrans avec la propriété "vh" responsive proportionnellement 
+à la taille de ma fenêtre*/    
+    height:90vh;
+/* Je place un padding avec valeur de 5% à mon sub*/
+    padding:3%;
+/* Je place une margin avec valeur de 5% à mon sub*/
+    margin:5%;
+    
+        
+
+   }
+
+  
+   .sub-navigation > h2 >  a {
+
+        /*Je place  mon titre h2 en mode flex*/
+
+               display:flex;
+               Justify-content:center;    
+        /*Je place une couleur "noire" à mon titre h2*/
+               color:black;
+        /* Je place mon texte au centre*/  
+               text-align: center;
+               text-decoration: none;
+               font-family: roboto black, 'Open Sans';
+               font-weight:bold;
+               letter-spacing: 0.2em;
+               font-size:18px;
+               list-style-type: none;
+        /*Je place une marge en bas du titre h2 du menu vertical (sub-navigation)*/
+               margin:auto;    
+               margin-left:15%;          
+                   
+            
+             }
+
+
+ .sub-navigation ul li {
+                   
+        /*j'ôte les puces devant ma liste d'articles*/
+              list-style-type: none;
+        /* Je place un padding de 0% et une marge avec la valeur de 7%*/
+              padding:0%;
+              margin:7%;
+        /* Je place mon texte au centre*/
+              text-align:center;
+              letter-spacing: 0.1em;
+        /* Je modifie la taille de la police des mes liens d'articles*/
+              font-size:0,5rem;
+              font-family: roboto black, 'Open Sans';
+              color: blueviolet;
+              text-decoration: none;
+        /* Je place une bordure aux liens de mes articles*/
+              border-color: #0d706a;
+        /* Je place une couleur de fond aux liens de mes articles*/
+              background-color:#FDFFA9;
+              width:96%;
+              
+         
+    }
+    
+
+
+.sub-navigation > h2>  a:active {
+          color: violet;
+          background-color: #bbbe09;
+
+     }
+
+
+.sub-navigation > h2> a> a:hover {
+          color: violet;
+          background-color: #bbbe09;
+
+
+}
+
+
+.sub-navigation  ul li a  {
+
+        display:flex;
+        list-style: none;
+        color: blueviolet;
+        text-decoration: none;
+        border-color: #0d706a;
+        background-color:white;
+        margin:auto;
+    
+  }
+
+
+
+.sub-navigation a:hover {
+                    
+/*Pour finir, ajoutez un effet de survol sur les liens.*/
+        color: blue;
+        background-color: #f5e49f; 
+        border-color: #9e7f02;
+                  
+}
+
+
+
+footer {
+
+        
+        background-color:#FFD365;
+/* J'indique une valeur adaptive pour mes divers écrans avec la propriété "vh" responsive proportionnellement 
+ à la taille de ma fenêtre*/    
+        height:10vh;
+        margin-top:2%;
+        padding-top:10%;
+        color:black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align:center;
+        font-size: medium;
+        word-spacing:1%;
+        letter-spacing: 1%; 
+        opacity:1;
+        width:1O00px;
+            } 
+
+@media screen and (max-width: 680px) { 
+        .footer {/* Je place une largeur à mon header*/
+        width:5%;}
+            }
+            
+
+
+.p-footer {
+
+
+    text-align:center;
+    font-size:10px;
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:white;
+    margin-top:2%;
+    padding:1%;
+    letter-spacing:5px;
+
+}
+
+
+
+
+
+
+  

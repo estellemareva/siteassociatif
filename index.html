@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr">
+
+  <head>
+
+      <!-- Ici je place la description de mon site web, pour permettre un bon référencement naturel-->
+         <meta name="description" content="SOS caméléon est une association à but non lucratif pour l'information
+    et la sauvegarde des caméléons">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Je place ici le lien vers ma page CSS-->
+      <!--Je place un fichier css pour réinitialiser mon style CSS (navigateurs)-->
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+      
+      <!--Je place ici le titre de ma page web-->
+        <title>Association SOS caméléons</title>
+
+      <!--Ici je place le favicon (petite image vers URL du site, afin de présenter l'avatar du site web)-->
+        <link rel="shortcut icon" href="img/logo-favicon-cameleon.ico" type="image/x-icon" />
+
+        
+    </head>
+
+ 
+
+ 
+     <body>
+        <!-- Ici je place tout le contenu de la contenu de la page html-->
+
+    
+        <!--Ici je place l'entête de la page-->
+
+    
+        <header class="header">
+     
+
+      
+          <figure>
+        <!--J'intègre un titre H2 avec une class modifiable en CSS dans une div avec logo-->
+      
+            <span><h1>Bienvenue sur le site de l'Association SOS caméléons</h1></span>
+
+        <!-- Je place mon logo, avec le lien vers mon image img, dans mon dossier img-->
+            <img class="logo" src="img/cameleon-logo.jpg" alt="logo avec cameleon"/>
+        <!-- Je décris l'image avec l'attribut figcaption-->
+            <figcaption>logo avec caméléon</figcaption>
+        
+          </figure>
+
+        <!--J'intègre un formulaire de recherche dans mon header-->
+      
+            <input type="search" placeholder="Entrez un mot-clef" name="rechercher">
+    
+        </header> 
+  
+    
+        <!--J'utilise une liste non-ordonnée en 4 liens pour le menu du site-->
+        
+
+         <ul id="nav">
+
+        <!--J'atoute une class à la liste afin de pouvoir effectuer les réglages du menu CSS.-->
+    
+           <li><a href="#">Accueil</a></li>
+           <li><a href="#">A propos</a></li>
+           <li><a href="#">Actualité</a></li>
+           <li><a href="#">Contact</a></li>
+
+        
+         </ul>
+        
+        </nav>
+
+        <!--J'ajoute une section avec "class container flex" avec de placer mes éléments flexibles.-->
+    
+
+        <section class="container">
+
+         <!--J'ajoute un contener flex avec de placer mes éléments flexibles.-->
+
+         <!--Je place mes boites à l'intérieur "item" flex avec de placer mes éléments flexibles.-->
+            <span class="item">
+          
+          <!--Je place un lien vers une page de mon site sur mon image-->
+            <a href="#SOS Caméléon">
+            <img src="img/cameleon-figure.jpg" alt="figure avec caméléon"width="250px"/>
+            </a>
+         <!--Je place un lien à mon titre, afin de renvoyer les internautes vers d'autres pages du site.-->
+            <a href="#"><h2>A propos</h2></a>
+
+          <!--Je place une class dans mon paragraphe, afin de le modifier en CSS-->
+            <p class="box">Découvrez la présentation de l'Association</p>
+          
+            </span>
+
+            
+            <span class="item">
+               
+          <!--Je place un lien vers une page de mon site sur mon image-->
+              <a href="#Actualité">
+              <img src="img/figure-cameleon.jpg" alt="figure avec caméléon"width="250px"/>
+              </a>
+          <!--Je place un lien vers une page de mon site sur mon titre h2-->     
+              <a href="#"><h2>Les Actualité</h2></a>
+              <p class="box">Découvrez les évènements de l'Association</p>
+        
+              </span>
+
+      
+              <span class="item">
+              <a href="#Contactez-nous">
+              <img src="img/figure-cameleon-deux.jpg" alt="figure avec caméléon"width="250px"/>
+              </a>
+              <a href="#"><h2>Contactez-nous</h2></a>
+              <p class="box">Cliquez ici pour contacter notre Association</p>
+           
+              </span>
+
+          <!--Ici se trouve la fin des sections avec mes boites flex.-->
+    
+          </section>
+    
+
+         <!--Ici je place le footer (bas du site web) avec une class pour modifier en CSS-->
+        
+          <footer class="pied-page">
+    
+            <p>Copyright-SOS-cameleon@2022</p>
+
+        </body>
+        </html>
